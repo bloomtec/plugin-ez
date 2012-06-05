@@ -43,6 +43,11 @@ class OptionsController extends EzAppController {
 	 */
 	public function admin_fileBrowser(){
 		$this -> layout = "Ez.file_browser";
+		App::uses('Folder', 'Utility');
+		App::uses('File', 'Utility');
+		$folder = new Folder(WWW_ROOT . DS . "wysiwyg");
+		$this -> set("folder", $folder -> read());
+		$this -> set("folderPath", DS . "wysiwyg");
 	}
 	public function home() {
 
