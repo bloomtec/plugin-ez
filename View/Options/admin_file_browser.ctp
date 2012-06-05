@@ -19,7 +19,7 @@
 				case "jpeg":
 				?>
 				<li> 
-	 				<?php echo $html->image($folderPath."/".$fileName,array("class"=>"preview"));?>
+	 				<?php echo $this -> Html->image($folderPath."/".$fileName,array("class"=>"preview"));?>
 	 				<div class="info">
 						<h2> <?php echo $fileName ?></h2>
 						<div class="actions">
@@ -35,7 +35,7 @@
 				case "doc":
 				?>
 				<li rel=<?php echo "/".$folderPath."/".$fileName?>> 
-	 				<?php echo $html->image("word.png",array("class"=>"preview"));?>
+	 				<?php echo $this -> Html->image("word.png",array("class"=>"preview"));?>
 	 				<div class="info">
 						<h2> <?php echo $fileName ?></h2>
 					</div>
@@ -47,7 +47,7 @@
 				case "xlsx":
 				?>
 				<li rel=<?php echo $folderPath."/".$fileName?>> 
-	 				<?php echo $html->image("excel.png",array("class"=>"preview"));?>
+	 				<?php echo $this -> Html->image("excel.png",array("class"=>"preview"));?>
 	 			</li>
 				<?php
 				break;
@@ -56,7 +56,7 @@
 				case "pptx":
 				?>
 				<li rel=<?php echo $folderPath."/".$fileName?>> 
-	 				<?php echo $html->image("power-point.png",array("class"=>"preview"));?>
+	 				<?php echo $this -> Html->image("power-point.png",array("class"=>"preview"));?>
 	 			</li>
 				<?php
 				break;
@@ -64,7 +64,7 @@
 				case "swf":
 				?>
 				<li rel=<?php echo $folderPath."/".$fileName?>> 
-	 				<?php echo $html->image($folderPath."/".$fileName,array("class"=>"preview"));?>
+	 				<?php echo $this -> Html->image($folderPath."/".$fileName,array("class"=>"preview"));?>
 	 				<div class="info">
 						<h2> <?php echo $fileName ?></h2>
 						<div class="actions">
