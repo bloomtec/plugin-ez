@@ -75,6 +75,7 @@ p {
 /** Layout **/
 #container {
 	text-align: left;
+	min-width:960px;
 }
 
 #header{
@@ -115,7 +116,7 @@ div.form,
 div.index,
 div.view {
 	float:right;
-	width:76%;
+	width:96%;
 	border-left:1px solid #666;
 	padding:10px 2%;
 }
