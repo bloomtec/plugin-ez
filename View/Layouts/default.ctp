@@ -30,6 +30,7 @@
 		
 		echo $this->Html->css('reset.css');
 		echo $this->Html->css('Ez.ez.css');
+		echo $this->Html->css('Ez.styles.css');
 		echo $this -> Html -> script('jquery.tools.min.js');
 		echo $this -> Html -> script('bjs/bjs');
 		echo $this -> Html -> script('Ez.ckeditor/ckeditor'); 

@@ -1,0 +1,23 @@
+.textarea{
+	float:left;
+	clear:none;
+	width:49%;
+}
+.to-right{
+	margin-right:0;
+	padding-right: 0;
+}
+.content, .left_content{
+	float:left;
+	clear:none;
+
+}
+.content{
+	min-width:660px;
+	width:66%;
+	margin-right:0;
+}
+.left_content{
+	min-width:330px;
+	width:28%;
+}
