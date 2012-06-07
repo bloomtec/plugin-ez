@@ -21,3 +21,9 @@
 	min-width:330px;
 	width:28%;
 }
+.cke_button_myDialogCmd .cke_icon{
+	display: none !important;
+}		
+.cke_button_myDialogCmd .cke_label{
+	display: inline !important;
+}
