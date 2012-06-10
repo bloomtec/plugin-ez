@@ -1,23 +1,12 @@
 <?php
 /**
- * Model template file.
+ * Model template file for EZ.
  *
  * Used by bake to create new Model files.
  *
  * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       Cake.Console.Templates.default.classes
- * @since         CakePHP(tm) v 1.3
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+ 
 
 echo "<?php\n";
 echo "App::uses('{$plugin}AppModel', '{$pluginPath}Model');\n";
@@ -65,7 +54,7 @@ if ($displayField): ?>
  */
 	public $displayField = '<?php echo $displayField; ?>';
 <?php endif;
-
+require_once(APP."Plugin".DS."Ez".DS."Console".DS."Templates".DS."General".DS."ez_model_vars.php");
 if (!empty($validate)):
 	echo "/**\n * Validation rules\n *\n * @var array\n */\n";
 	echo "\tpublic \$validate = array(\n";
