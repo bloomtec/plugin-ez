@@ -26,6 +26,11 @@
 			</li>
 			<li>
 				<?php
+				echo $this -> Html -> link('Tallas', array('plugin' => false, 'controller' => 'product_sizes', 'action' => 'index'));
+				?>
+			</li>
+			<li>
+				<?php
 				echo $this -> Html -> link('Productos', array('plugin' => false, 'controller' => 'products', 'action' => 'index'));
 				?>
 			</li>
