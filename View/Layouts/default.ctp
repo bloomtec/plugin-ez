@@ -31,11 +31,16 @@
 		echo $this->Html->css('reset.css');
 		echo $this->Html->css('Ez.ez.css');
 		echo $this->Html->css('Ez.styles.css');
+		echo $this -> Html -> css('uploadify');
 		echo $this -> Html -> script('jquery.tools.min.js');
+		echo $this -> Html -> script("swfobject.js"); 
+		echo $this -> Html -> script('jquery.uploadify.min');
+		echo $this -> Html -> script('upload');
 		echo $this -> Html -> script('bjs/bjs');
 		echo $this -> Html -> script('Ez.ckeditor/ckeditor'); 
 		echo $this -> Html -> script('Ez.ckeditor/adapters/jquery');
-		echo $this -> Html -> script('Ez.ez');
+		echo $this -> Html -> script('Ez.ez');		
+
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
