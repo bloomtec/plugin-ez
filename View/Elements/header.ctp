@@ -36,6 +36,18 @@
 			</li>
 			<li>
 				<?php
+				echo $this -> Html -> link('Galerias', array('plugin' => false, 'controller' => 'galleries', 'action' => 'index'));
+				?>
+				<ul>
+					<li>
+						<?php
+						echo $this -> Html -> link('Imagenes', array('plugin' => false, 'controller' => 'images', 'action' => 'index'));
+						?>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<?php
 				echo $this -> Html -> link('Inventario', array('plugin' => false, 'controller' => 'inventories', 'action' => 'index'));
 				?>
 			</li>
