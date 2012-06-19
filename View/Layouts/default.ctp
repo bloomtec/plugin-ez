@@ -33,7 +33,6 @@
 		echo $this->Html->css('Ez.styles.css');
 		echo $this -> Html -> css('uploadify');
 		echo $this -> Html -> script('jquery.tools.min.js');
-		echo $this -> Html -> script("swfobject.js"); 
 		echo $this -> Html -> script('jquery.uploadify.min');
 		echo $this -> Html -> script('upload');
 		echo $this -> Html -> script('bjs/bjs');
