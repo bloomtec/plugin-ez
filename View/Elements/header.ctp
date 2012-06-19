@@ -26,6 +26,11 @@
 			</li>
 			<li>
 				<?php
+				echo $this -> Html -> link('Colores', array('plugin' => false, 'controller' => 'colors', 'action' => 'index'));
+				?>
+			</li>
+			<li>
+				<?php
 				echo $this -> Html -> link('Tallas', array('plugin' => false, 'controller' => 'product_sizes', 'action' => 'index'));
 				?>
 			</li>
@@ -38,13 +43,13 @@
 				<?php
 				echo $this -> Html -> link('Galerias', array('plugin' => false, 'controller' => 'galleries', 'action' => 'index'));
 				?>
-				<ul>
+				<!--<ul>
 					<li>
 						<?php
 						echo $this -> Html -> link('Imagenes', array('plugin' => false, 'controller' => 'images', 'action' => 'index'));
 						?>
 					</li>
-				</ul>
+				</ul>-->
 			</li>
 			<li>
 				<?php
