@@ -1,7 +1,12 @@
-.textarea{
+.pages .textarea, 
+.categories .textarea, 
+.categories .image-container{
 	float:left;
 	clear:none;
 	width:49%;
+}
+#ez .textarea.banner{
+	width:100%;
 }
 .to-right{
 	margin-right:0;
@@ -26,4 +31,12 @@
 }		
 .cke_button_myDialogCmd .cke_label{
 	display: inline !important;
+}
+.categories .image-container .preview{
+	margin-bottom:0;
+	padding:0;
+	height:100px;
+}
+.categories .image-container .preview img{
+	height:100px;
 }

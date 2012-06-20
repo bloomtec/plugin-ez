@@ -46,7 +46,7 @@
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body id="ez" class="default">
 	<div id="container">
 		<div id="header">
 			<?php echo $this -> element('Ez.header');?>
@@ -57,9 +57,10 @@
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
+		
+	</div>
+	<div id="footer">
 			<?php echo $this -> element('Ez.footer');?>
-		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
