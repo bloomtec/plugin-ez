@@ -58,6 +58,12 @@
 			</li>
 		</ul>
 	</li>
+	<!-- CUPONES -->
+	<li>
+		<?php
+		echo $this -> Html -> link('Cupones', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'index'));
+		?>
+	</li>
 	<!-- NAVEGACIÓN -->
 	<li>
 		<a>Navegación</a>
