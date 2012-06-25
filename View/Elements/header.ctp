@@ -96,6 +96,12 @@
 		echo $this -> Html -> link('Servicio Correo', array('plugin' => 'user_control', 'controller' => 'user_mail_configs', 'action' => 'edit'));
 		?>
 	</li>
+	<!-- LOGOUT -->
+	<li>
+		<?php
+		echo $this -> Html -> link('Cerrar Sesión', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'logout', 'admin' => true));
+		?>
+	</li>
 </ul>
 <script>
 	$(document).ready(function() {
