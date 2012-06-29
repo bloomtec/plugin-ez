@@ -64,6 +64,12 @@
 		echo $this -> Html -> link('Cupones', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'index'));
 		?>
 	</li>
+	<!-- ORDENES -->
+	<li>
+		<?php
+		echo $this -> Html -> link('Ordenes', array('plugin' => false, 'controller' => 'orders', 'action' => 'index'));
+		?>
+	</li>
 	<!-- NAVEGACIÓN -->
 	<li>
 		<a>Navegación</a>
