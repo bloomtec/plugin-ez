@@ -70,6 +70,20 @@
 		echo $this -> Html -> link('Ordenes', array('plugin' => false, 'controller' => 'orders', 'action' => 'index'));
 		?>
 	</li>
+	<!-- SONDEOS -->
+	<li>
+		<?php
+		echo $this -> Html -> link('Sondeos', array('plugin' => false, 'controller' => 'surveys', 'action' => 'index'));
+		?>
+		<ul>
+			<!-- OCIONES SONDEOS -->
+			<li>
+				<?php
+				echo $this -> Html -> link('Opciones', array('plugin' => false, 'controller' => 'survey_options', 'action' => 'index'));
+				?>
+			</li>
+		</ul>
+	</li>
 	<!-- NAVEGACIÓN -->
 	<li>
 		<a>Navegación</a>
