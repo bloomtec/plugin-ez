@@ -7,13 +7,13 @@
 		<?php
 		echo $this -> Html -> link('Usuarios', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'index'));
 		?>
-		<!-- <ul>
+		<ul>
 			<li>
 				<?php
 				echo $this -> Html -> link('Crear Usuario', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'add'));
 				?>
 			</li>
-		</ul> -->
+		</ul>
 	</li>
 	<!-- CATALOGO -->
 	<li>
@@ -23,33 +23,41 @@
 				<?php
 				echo $this -> Html -> link('Categorías', array('plugin' => false, 'controller' => 'categories', 'action' => 'index'));
 				?>
+				<ul>
+					<li>
+						<?php echo $this -> Html -> link('Crear Nueva', array('plugin' => false, 'controller' => 'categories', 'action' => 'add')); ?>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<?php
 				echo $this -> Html -> link('Colores', array('plugin' => false, 'controller' => 'colors', 'action' => 'index'));
 				?>
+				<ul>
+					<li>
+						<?php echo $this -> Html -> link('Crear Nuevo', array('plugin' => false, 'controller' => 'colors', 'action' => 'add')); ?>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<?php
 				echo $this -> Html -> link('Tallas', array('plugin' => false, 'controller' => 'product_sizes', 'action' => 'index'));
 				?>
+				<ul>
+					<li>
+						<?php echo $this -> Html -> link('Crear Nueva', array('plugin' => false, 'controller' => 'product_sizes', 'action' => 'add')); ?>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<?php
 				echo $this -> Html -> link('Productos', array('plugin' => false, 'controller' => 'products', 'action' => 'index'));
 				?>
-			</li>
-			<li>
-				<?php
-				echo $this -> Html -> link('Galerias', array('plugin' => false, 'controller' => 'galleries', 'action' => 'index'));
-				?>
-				<!--<ul>
+				<ul>
 					<li>
-						<?php
-						echo $this -> Html -> link('Imagenes', array('plugin' => false, 'controller' => 'images', 'action' => 'index'));
-						?>
+						<?php echo $this -> Html -> link('Crear Nuevo', array('plugin' => false, 'controller' => 'products', 'action' => 'add')); ?>
 					</li>
-				</ul>-->
+				</ul>
 			</li>
 			<li>
 				<?php
@@ -63,6 +71,11 @@
 		<?php
 		echo $this -> Html -> link('Cupones', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'index'));
 		?>
+		<ul>
+			<li>
+				<?php echo $this -> Html -> link('Crear Nuevo', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'add')); ?>
+			</li>
+		</ul>
 	</li>
 	<!-- ORDENES -->
 	<li>
@@ -76,10 +89,9 @@
 		echo $this -> Html -> link('Sondeos', array('plugin' => false, 'controller' => 'surveys', 'action' => 'index'));
 		?>
 		<ul>
-			<!-- OCIONES SONDEOS -->
 			<li>
 				<?php
-				echo $this -> Html -> link('Opciones', array('plugin' => false, 'controller' => 'survey_options', 'action' => 'index'));
+				echo $this -> Html -> link('Crear Sondeo', array('plugin' => false, 'controller' => 'surveys', 'action' => 'add'));
 				?>
 			</li>
 		</ul>
@@ -93,6 +105,13 @@
 				<?php
 				echo $this -> Html -> link('Páginas', array('plugin' => false, 'controller' => 'pages', 'action' => 'index'));
 				?>
+				<ul>
+					<li>
+						<?php
+						echo $this -> Html -> link('Crear Página', array('plugin' => false, 'controller' => 'pages', 'action' => 'add'));
+						?>
+					</li>
+				</ul>
 			</li>
 			<!-- MENÚS -->
 			<li>
