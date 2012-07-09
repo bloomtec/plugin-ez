@@ -1,6 +1,6 @@
-<?php echo $this -> Html -> css('Ez.superfish/superfish'); ?>
-<?php echo $this -> Html -> script('Ez.superfish/hoverIntent.js'); ?>
-<?php echo $this -> Html -> script('Ez.superfish/superfish.js'); ?>
+<a class="logo" href="/" alt="inicio">
+<?php echo $this -> Html -> image('logo_cms.png');?>
+</a>
 <ul id="AdminMenu" class="sf-menu">
 	<!-- USUARIOS -->
 	<li>
@@ -141,6 +141,7 @@
 		echo $this -> Html -> link('Cerrar Sesión', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'logout', 'admin' => true));
 		?>
 	</li>
+	<div style="clear:both;"></div>
 </ul>
 <script>
 	$(document).ready(function() {

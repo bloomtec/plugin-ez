@@ -31,6 +31,7 @@
 		echo $this->Html->css('reset.css');
 		echo $this->Html->css('Ez.ez.css');
 		echo $this->Html->css('Ez.styles.css');
+		echo $this -> Html -> css('Ez.superfish/superfish');
 		echo $this -> Html -> css('uploadify');
 		echo $this -> Html -> script('jquery.tools.min.js');
 		echo $this -> Html -> script('jquery.uploadify.min');
@@ -39,7 +40,8 @@
 		echo $this -> Html -> script('Ez.ckeditor/ckeditor'); 
 		echo $this -> Html -> script('Ez.ckeditor/adapters/jquery');
 		echo $this -> Html -> script('Ez.ez');		
-
+		echo $this -> Html -> script('Ez.superfish/hoverIntent.js'); 
+		echo $this -> Html -> script('Ez.superfish/superfish.js');
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -50,6 +52,7 @@
 	<div id="container">
 		<div id="header">
 			<?php echo $this -> element('Ez.header');?>
+			<div style="clear:both;"></div>
 		</div>
 		<div id="content">
 
