@@ -1,89 +1,92 @@
 
 /*** ESSENTIAL STYLES ***/
-.sf-menu, .sf-menu * {
+.nav, .nav * {
 	margin:			0;
 	padding:		0;
 	list-style:		none;
 }
-.sf-menu {
+.nav {
 	line-height:	1.0;
 }
-.sf-menu ul {
+.nav ul {
 	position:		absolute;
 	top:			-999em;
 	width:			10em; /* left offset of submenus need to match (see below) */
 }
-.sf-menu ul li {
+.nav ul li {
 	width:			100%;
 }
-.sf-menu li:hover {
+.nav li:hover {
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
 }
-.sf-menu li {
+.nav li {
 	float:			left;
 	position:		relative;
 }
-.sf-menu a {
+.nav a {
 	display:		block;
 	position:		relative;
 }
-.sf-menu li:hover ul,
-.sf-menu li.sfHover ul {
+.nav li:hover ul,
+.nav li.sfHover ul {
 	left:			0;
 	top:			2.5em; /* match top ul list item height */
 	z-index:		99;
 }
-ul.sf-menu li:hover li ul,
-ul.sf-menu li.sfHover li ul {
+ul.nav li:hover li ul,
+ul.nav li.sfHover li ul {
 	top:			-999em;
 }
-ul.sf-menu li li:hover ul,
-ul.sf-menu li li.sfHover ul {
+ul.nav li li:hover ul,
+ul.nav li li.sfHover ul {
 	left:			10em; /* match ul width */
 	top:			0;
 }
-ul.sf-menu li li:hover li ul,
-ul.sf-menu li li.sfHover li ul {
+ul.nav li li:hover li ul,
+ul.nav li li.sfHover li ul {
 	top:			-999em;
 }
-ul.sf-menu li li li:hover ul,
-ul.sf-menu li li li.sfHover ul {
+ul.nav li li li:hover ul,
+ul.nav li li li.sfHover ul {
 	left:			10em; /* match ul width */
 	top:			0;
 }
 
 /*** DEMO SKIN ***/
-.sf-menu {
-	width:78%;
-	float:right;
-	margin-bottom:	0;
+.nav {
+	float:	right;
+	margin:	1em 0;
 }
-.sf-menu a {
-	border-left:	1px solid #fff;
-	border-top:		1px solid #CFDEFF;
+.nav a {
+	/*border-left:	1px solid #fff;*/
+	/*border-top:		1px solid #000;*/
 	padding: 		.75em 1em;
 	text-decoration:none;
 }
-.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			white;
+.nav a, .nav a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#000;
 }
-.sf-menu li {
-	background:		#E62B7C;
+.nav li {
+	background: url(../img/trama-activo.png) repeat-x;
+	/*background:		#BDD2FF;*/
 }
-.sf-menu li li {
-	background:		#E62B7C;
+.nav li li {
+	background: url(../img/trama-activo.png) repeat-x;
+	/*background:		#AABDE6;*/
 }
-.sf-menu li li li {
-	background:		#E62B7C;
+.nav li li li {
+	background: url(../img/trama-activo.png) repeat-x;
+	/*background:		#9AAEDB;*/
 }
-.sf-menu li:hover, .sf-menu li.sfHover,
-.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:		#EA589A;
+.nav li:hover, .nav li.sfHover,
+.nav a:focus, .nav a:hover, .nav a:active {
+	background: url(../img/trama-nav.png) repeat-x;
+	/*background:		#CFDEFF;*/
 	outline:		0;
 }
 
 /*** arrows **/
-.sf-menu a.sf-with-ul {
+.nav a.sf-with-ul {
 	padding-right: 	2.25em;
 	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
 }
@@ -112,14 +115,14 @@ li.sfHover > a > .sf-sub-indicator {
 }
 
 /* point right for anchors in subs */
-.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
-.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+.nav ul .sf-sub-indicator { background-position:  -10px 0; }
+.nav ul a > .sf-sub-indicator { background-position:  0 0; }
 /* apply hovers to modern browsers */
-.sf-menu ul a:focus > .sf-sub-indicator,
-.sf-menu ul a:hover > .sf-sub-indicator,
-.sf-menu ul a:active > .sf-sub-indicator,
-.sf-menu ul li:hover > a > .sf-sub-indicator,
-.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+.nav ul a:focus > .sf-sub-indicator,
+.nav ul a:hover > .sf-sub-indicator,
+.nav ul a:active > .sf-sub-indicator,
+.nav ul li:hover > a > .sf-sub-indicator,
+.nav ul li.sfHover > a > .sf-sub-indicator {
 	background-position: -10px 0; /* arrow hovers for modern browsers*/
 }
 

@@ -30,12 +30,12 @@ body {
 	margin: 0;
 }
 a {
-	color: #003d4c;
+	color: #E62B7C;
 	text-decoration: underline;
 	font-weight: bold;
 }
 a:hover {
-	color: #367889;
+	color: black;
 	text-decoration: none;
 }
 a img {
@@ -52,7 +52,7 @@ h1 {
 }
 h2 {
 	background: #fff;
-	color: #e32;
+	color: #E62B7C;
 	font-family: 'Gill Sans', 'lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
 }
@@ -79,13 +79,13 @@ p {
 	background-color: #F4F2F2;
     border: 1px solid #000000;
     box-shadow: 1px 3px 2px #201F1F;
-	width:90%;
+	width:95%;
 	min-height:90%;
 	margin:20px auto 0 auto;
 }
 
 #header {
-	padding: 10px 20px;
+	padding: 10px 10px;
 }
 #header h1 {
 	line-height: 20px;
@@ -103,6 +103,14 @@ p {
 	color: #fff;
 	background: #003d4c;
 	text-decoration: underline;
+}
+#header a.logo{
+	width:19%;
+	display:block;
+	float:left;
+}
+#header .logo img{
+	width:100%;
 }
 #content {
 	background: #fff;
@@ -244,6 +252,7 @@ th {
 	border-bottom: 2px solid #555;
 	text-align: left;
 	padding: 4px;
+	color:#E62B7C;
 }
 th a {
 	display: block;
@@ -365,7 +374,7 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #e32;
+	color: #E62B7C;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -453,7 +462,7 @@ input[type=submit] {
 	width: auto;
 }
 form .submit input[type=submit] {
-	background: #333;
+	background: #E62B7C;
 /*	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
 	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
 	background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);*/
@@ -463,7 +472,7 @@ form .submit input[type=submit] {
 	padding: 8px 10px;
 }
 form .submit input[type=submit]:hover {
-	background: gray;
+	background: #EA589A;;
 }
 /* Form errors */
 form .error {
@@ -595,7 +604,7 @@ p.error em {
 input[type=submit], .actions ul li a, .actions a {
 	font-weight: normal;
 	padding: 4px 8px;
-	background: #333;
+	background: #E62B7C;
 	/*
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#dcdcdc));
 	background-image: -webkit-linear-gradient(top, #fefefe, #dcdcdc);
@@ -620,7 +629,7 @@ input[type=submit], .actions ul li a, .actions a {
 	text-align:center;
 }
 .actions ul li a:hover, .actions a:hover {
-	background: gray;
+	background: #EA589A;
 	border-color: #acacac;
 	text-decoration: none;
 }
