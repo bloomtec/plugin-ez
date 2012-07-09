@@ -1,4 +1,4 @@
-<a class="logo" href="/" alt="inicio">
+<a class="logo" href="/admin" alt="inicio">
 <?php echo $this -> Html -> image('logo_cms.png');?>
 </a>
 <ul id="AdminMenu" class="sf-menu">
