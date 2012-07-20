@@ -66,14 +66,20 @@
 			</li>
 		</ul>
 	</li>
-	<!-- CUPONES -->
+	<!-- PROMOCIONES Y CUPONES -->
 	<li>
-		<?php
-		echo $this -> Html -> link('Cupones', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'index'));
-		?>
+		<a>Promociones</a>
 		<ul>
 			<li>
-				<?php echo $this -> Html -> link('Crear Nuevo', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'add')); ?>
+				<?php echo $this -> Html -> link('Sitio Web', array('plugin' => false, 'controller' => 'promotions', 'action' => 'index')); ?>
+			</li>
+			<li>
+				<?php echo $this -> Html -> link('Cupones', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'index')); ?>
+				<ul>
+					<li>
+						<?php echo $this -> Html -> link('Crear Nuevo', array('plugin' => false, 'controller' => 'coupon_batches', 'action' => 'add')); ?>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</li>
