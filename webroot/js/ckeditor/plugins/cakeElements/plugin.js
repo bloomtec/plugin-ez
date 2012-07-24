@@ -3,7 +3,8 @@ CKEDITOR.plugins.add('cakeElements',
 	init: function( editor )
 	{
 		// Plugin logic goes here...
-	}
+	},
+	
 });
 CKEDITOR.dialog.add( 'cakeElementsDialog', function( editor )
 {
