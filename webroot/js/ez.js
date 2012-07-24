@@ -12,33 +12,35 @@ $(function() {// CONFIGURACIONES JQUERYS PLUGINS
 
 	}, {
 		filebrowserUploadUrl : '/wysiwyg/upload.php',
-		filebrowserBrowseUrl : '/admin/ez/options/fileBrowser',
-		toolbar : 'Dialog'
+		filebrowserBrowseUrl : '/admin/ez/options/fileBrowser'//,
+		//toolbar : 'Dialog',
+		//extraPlugins : 'cakeElements',
 	});
-	if($('textarea.editor2').length){
+	/*if($('textarea.editor2').length){
 		var editor = $('textarea.editor2').ckeditorGet();		
 		editor.on('pluginsLoaded', function(ev) {
 			// If our custom dialog has not been registered, do that now.
-			if(!CKEDITOR.dialog.exists('myDialog')) {
+			if(!CKEDITOR.dialog.exists('cakeElements')) {
 				// We need to do the following trick to find out the dialog
 				// definition file URL path. In the real world, you would simply
 				// point to an absolute path directly, like "/mydir/mydialog.js".
-				var href = '/js/my_dialog.js';
+				var href = '/ez/js/cakeElements/plugin.js';
 				// Finally, register the dialog.
-				CKEDITOR.dialog.add('myDialog', href);
+				CKEDITOR.dialog.add('cakeElements', href);
 			}
 
 			// Register the command used to open the dialog.
-			editor.addCommand('myDialogCmd', new CKEDITOR.dialogCommand('myDialog'));
+			editor.addCommand('cakeElementsDialog', new CKEDITOR.dialogCommand('cakeElementsDialog'));
 
 			// Add the a custom toolbar buttons, which fires the above
 			// command..
-			editor.ui.addButton('MyButton', {
-				label : 'Elementos',
-				command : 'myDialogCmd'
+			editor.ui.addButton( 'cakeElements',
+			{
+				label: 'Elementos',
+				command: 'cakeElementsDialog',
+				icon: '/img/b_zoom_in_ac.png'
 			});
 		});
-	}
-	
+	}*/
 	
 });

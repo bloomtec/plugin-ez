@@ -144,7 +144,7 @@
 	<!-- LOGOUT -->
 	<li>
 		<?php
-		echo $this -> Html -> link('Cerrar Sesión', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'logout', 'admin' => true));
+		echo $this -> Html -> link('Salir', array('plugin' => 'user_control', 'controller' => 'users', 'action' => 'logout', 'admin' => true));
 		?>
 	</li>
 	<div style="clear:both;"></div>

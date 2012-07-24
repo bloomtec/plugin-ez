@@ -3,7 +3,7 @@
 .categories .image-container{
 	float:left;
 	clear:none;
-	width:49%;
+	width:48%;
 }
 #ez .textarea.banner{
 	width:100%;
@@ -39,4 +39,7 @@
 }
 .categories .image-container .preview img{
 	height:100px;
+}
+.left_content .select{
+	float:left;
 }

@@ -225,9 +225,9 @@ p {
 
 /** containers **/
 div.form, div.index, div.view {
-	width: 96%;
+	width: 100%;
 	/*border-left: 1px solid #666;*/
-	padding: 10px 2%;
+	padding: 10px 0;
 }
 div.actions {
 	float: left;

@@ -10,7 +10,7 @@ CKEDITOR.editorConfig = function( config )
 	// config.uiColor = '#AADC6E';
 	config.toolbar_Dialog =
 [
-	{ name: 'document', items : [ 'Source','-','MyButton','-','Save','NewPage','DocProps','Preview','Print','-','Templates' ] },
+	{ name: 'document', items : [ 'Source','-','cakeElements','-','Save','NewPage','DocProps','Preview','Print','-','Templates' ] },
 	{ name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
 	{ name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ] },
 	{ name: 'forms', items : [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 
