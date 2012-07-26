@@ -12,7 +12,7 @@ class AuditsController extends EzAppController {
 	 *
 	 * @return void
 	 */
-	public function index() {
+	public function admin_index() {
 		$this -> Audit -> recursive = 0;
 		$this -> set('audits', $this -> paginate());
 	}
@@ -23,12 +23,12 @@ class AuditsController extends EzAppController {
 	 * @param int $id ID de la audits
 	 * @return void
 	 */
-	public function view($id) {
+	public function admin_view($id) {
 		$this -> Audit -> id = $id;
 		if (!$this -> Audit -> exists()) {
 			throw new NotFoundException(__('Invalid audit'));
 		}
-		$this -> set('audits', $this -> Audit -> read(null, $id));
+		$this -> set('audit', $this -> Audit -> read(null, $id));
 	}
 
 }

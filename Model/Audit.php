@@ -54,7 +54,7 @@ class Audit extends EzAppModel {
 	public $belongsTo = array(
 		'User' => array(
 			'className' => 'User',
-			'foreignKey' => '_id',
+			'foreignKey' => 'user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -830,3 +830,15 @@ pre {
 #url-rewriting-warning {
 	display: none;
 }
+
+/**Audits*/
+.auditorias label, .auditorias h3{
+	float:left;
+}
+.auditorias label{
+	clear:both;
+	width:250px;
+}
+.auditorias .audit label{
+	width:250px;
+}

@@ -13,7 +13,6 @@ class AuditableBehavior extends ModelBehavior {
 	}
 	
     public function beforeSave() {
-    	if ($this -> Model = 'Audit') return true;
         if($this -> Model -> id){
         	//EDICION
         	$this -> Model -> recursive = -1;
@@ -27,7 +26,6 @@ class AuditableBehavior extends ModelBehavior {
         return true;
     }
 	public function afterSave($created){
-		if ($this -> Model = 'Audit') return true;
 		if(isset($this -> oldData[$this -> Model -> id]) && isset($_SESSION)){
 			//EDICION
 			App::import("Model", "Ez.Audit"); 
@@ -66,7 +64,6 @@ class AuditableBehavior extends ModelBehavior {
 		return true;
 	}
 	function beforeDelete(){
-		if ($this -> Model = 'Audit') return true;
 		if($this -> Model -> id){
         	//EDICION
         	$this -> Model -> recursive = -1;
@@ -77,7 +74,6 @@ class AuditableBehavior extends ModelBehavior {
 		return true;
 	}
 	function afterDelete(){
-		if ($this -> Model = 'Audit') return true;
 		if(isset($_SESSION)){
 			App::import("Model", "Ez.Audit"); 
 			$this -> Audit = new Audit;
@@ -96,7 +92,6 @@ class AuditableBehavior extends ModelBehavior {
 		return true;
 	}
 	private function parseData($data){
-		if ($this -> Model = 'Audit') return true;
 		$newData="";
 		if($data && is_array($data)){
 		foreach($data as $alias => $rows){
