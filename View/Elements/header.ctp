@@ -94,7 +94,16 @@
 	<?php endif; ?>
 	<!-- ORDENES -->
 	<?php if($this -> requestAction('/user_control/users/verifyUserAccess/' , array('ruta' => array('controllers', 'Orders', 'admin_index')))) : ?>
-	<li> <?php echo $this -> Html -> link('Ordenes', array('plugin' => false, 'controller' => 'orders', 'action' => 'index')); ?> </li>
+	<li>
+		<?php echo $this -> Html -> link('Ordenes', array('plugin' => false, 'controller' => 'orders', 'action' => 'index')); ?>
+		<?php if($this -> requestAction('/user_control/users/verifyUserAccess/' , array('ruta' => array('controllers', 'Configs', 'admin_edit')))) : ?>
+		<ul>
+			<li>
+				<?php echo $this -> Html -> link('Costo De Envío', array('plugin' => false, 'controller' => 'configs', 'action' => 'edit')); ?>
+			</li>
+		</ul>
+		<?php endif; ?>
+	</li>
 	<?php endif; ?>
 	<!-- SONDEOS -->
 	<?php if($this -> requestAction('/user_control/users/verifyUserAccess/' , array('ruta' => array('controllers', 'Surveys', 'admin_index')))) : ?>
