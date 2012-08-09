@@ -13,18 +13,23 @@ class AuditableBehavior extends ModelBehavior {
 	}
 	
     public function beforeSave() {
-        if($this -> Model -> id){
-        	//EDICION
-        	$this -> Model -> recursive = -1;
-        	$oldData = $this -> Model -> findById($this -> Model -> id);
-        $this -> oldData = array($this -> Model -> id => $oldData);
-        }else{
-        	// CREACION
-        	
-        }
-        //do something
-        return true;
+    	if(isset($_SESSION['Auth']['User']['id']) && !empty($_SESSION['Auth']['User']['id'])) {
+    		if($this -> Model -> id){
+	        	//EDICION
+	        	$this -> Model -> recursive = -1;
+	        	$oldData = $this -> Model -> findById($this -> Model -> id);
+	        	$this -> oldData = array($this -> Model -> id => $oldData);
+	        } else {
+	        	// CREACION
+	        	
+	        }
+	        //do something
+	        return true;
+    	} else {
+    		return false;
+    	}
     }
+	
 	public function afterSave($created){
 		if(isset($this -> oldData[$this -> Model -> id]) && isset($_SESSION)){
 			//EDICION
@@ -63,6 +68,7 @@ class AuditableBehavior extends ModelBehavior {
 		}
 		return true;
 	}
+
 	function beforeDelete(){
 		if($this -> Model -> id){
         	//EDICION
@@ -73,6 +79,7 @@ class AuditableBehavior extends ModelBehavior {
 	
 		return true;
 	}
+	
 	function afterDelete(){
 		if(isset($_SESSION)){
 			App::import("Model", "Ez.Audit"); 
@@ -91,24 +98,26 @@ class AuditableBehavior extends ModelBehavior {
 		unset($this -> oldData[$this -> Model -> id]);
 		return true;
 	}
+	
 	private function parseData($data){
 		$newData="";
 		if($data && is_array($data)){
-		foreach($data as $alias => $rows){
-			$newData.='<div class="audit">';
-			foreach($rows as $row => $value){
-				$newData.="<div class='audit-entity'>";
-					$newData.="<label>";
-						$newData.=$row;
-					$newData.="</label>";
-					$newData.="<span>";
-						$newData.=$value;
-					$newData.="</span><div style='clear:both'></div>";
-				$newData.="</div>";
-			}
-			$newData.='</div>';
-		}	
+			foreach($data as $alias => $rows){
+				$newData.='<div class="audit">';
+				foreach($rows as $row => $value){
+					$newData.="<div class='audit-entity'>";
+						$newData.="<label>";
+							$newData.=$row;
+						$newData.="</label>";
+						$newData.="<span>";
+							$newData.=$value;
+						$newData.="</span><div style='clear:both'></div>";
+					$newData.="</div>";
+				}
+				$newData.='</div>';
+			}	
 		}
 		return $newData;
 	}
+	
 }
