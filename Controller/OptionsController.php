@@ -28,20 +28,20 @@ class OptionsController extends EzAppController {
 	 *
 	 * @var array
 	 */
-	 public $uses = array();
-	 
-	 public function beforeFilter() {
+	public $uses = array();
+
+	public function beforeFilter() {
 		parent::beforeFilter();
-		$this -> Auth -> allow('construccion','home');
+		$this -> Auth -> allow('construccion', 'home');
 	}
-	
+
 	/**
 	 * Display Browser for management of images in wysiwyg
 	 *
-	 * @param 
+	 * @param
 	 * @return void
 	 */
-	public function admin_fileBrowser(){
+	public function admin_fileBrowser() {
 		$this -> layout = "Ez.file_browser";
 		App::uses('Folder', 'Utility');
 		App::uses('File', 'Utility');
@@ -49,6 +49,7 @@ class OptionsController extends EzAppController {
 		$this -> set("folder", $folder -> read());
 		$this -> set("folderPath", "/wysiwyg");
 	}
+
 	public function home() {
 
 	}
@@ -56,5 +57,5 @@ class OptionsController extends EzAppController {
 	public function construccion() {
 		$this -> layout = 'ajax';
 	}
-	
+
 }

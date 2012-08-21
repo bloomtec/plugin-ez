@@ -142,7 +142,8 @@ p {
 	
 }	
 #ez .login-bg{
-	background-image: url(/ez/img/logo_fondo.png);
+	background-image: url(/img/logo_fondo.png);
+	/*background-image: url(/ez/img/logo_fondo.png);*/
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	width: 348px;
@@ -172,6 +173,7 @@ p {
     box-shadow: 1px 3px 2px #201F1F;
     width: 560px;
     background-image: url(/ez/img/ez_logo.png);
+    /*background-image: url(/ez/img/ez_logo.png);*/
     background-position: 45px 86px;
     background-repeat: no-repeat;
     min-height: 200px;
@@ -197,6 +199,7 @@ p {
 }
 #ez.login-layout #content .submit input{
 	background-image: url(/ez/img/trama_boton.png);
+	/*background-image: url(/ez/img/trama_boton.png);*/
     border-color: #666666;
     box-shadow: 1px 3px 2px #A9A8A8;
     color: #FFFFFF;

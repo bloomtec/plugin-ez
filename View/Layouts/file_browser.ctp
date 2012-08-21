@@ -17,14 +17,16 @@
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+		
 		echo $this->Html->css('reset.css');
-		echo $this->Html->css('Ez.file_browser');
+		echo $this->Html->css('file_browser');
+		
 		echo $this -> Html -> script('jquery.tools.min.js');
 		echo $this -> Html -> script('bjs/bjs');
-		echo $this -> Html -> script('Ez.ckeditor/ckeditor'); 
-		echo $this -> Html -> script('Ez.ckeditor/adapters/jquery');
-		echo $this -> Html -> script('Ez.ez');
-		echo $this -> Html -> script("Ez.fileBrowser");
+		echo $this -> Html -> script('ckeditor/ckeditor'); 
+		echo $this -> Html -> script('ckeditor/adapters/jquery');
+		echo $this -> Html -> script('ez');
+		echo $this -> Html -> script("fileBrowser");
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

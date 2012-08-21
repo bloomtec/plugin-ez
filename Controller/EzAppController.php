@@ -1,8 +1,4 @@
 <?php
 
-class EzAppController extends AppController {
-	
-	
-	
-}
+class EzAppController extends AppController { }
 

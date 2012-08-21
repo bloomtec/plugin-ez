@@ -1,6 +1,4 @@
-<a class="logo" href="/admin" alt="inicio">
-<?php echo $this -> Html -> image('logo_cms.png');?>
-</a>
+<a class="logo" href="/admin" alt="inicio"><?php echo $this -> Html -> image('logo_cms.png'); ?></a>
 <ul id="AdminMenu" class="sf-menu">
 	<!-- USUARIOS -->
 	<?php if($this -> requestAction('/user_control/users/verifyUserAccess/' , array('ruta' => array('controllers', 'UserControl/Users', 'admin_index')))) : ?>
