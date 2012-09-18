@@ -143,6 +143,12 @@
 				<?php endif; ?>
 			</li>
 			<?php endif; ?>
+			<!-- BANNERS -->
+			<?php if($this -> requestAction('/user_control/users/verifyUserAccess/' , array('ruta' => array('controllers', 'Banners', 'admin_index')))) : ?>
+			<li>
+				<?php echo $this -> Html -> link('Banners', array('plugin' => false, 'controller' => 'banners', 'action' => 'index')); ?>
+			</li>
+			<?php endif; ?>
 		</ul>
 	</li>
 	<?php endif; ?>
